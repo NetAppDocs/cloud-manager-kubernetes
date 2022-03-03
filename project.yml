@@ -35,6 +35,10 @@ sidebar:
     - title: Enable data services on Kubernetes clusters
       url: task-kubernetes-enable-services.html
     - title: Knowledge and support
-      url: /get-help.html
+      entries:
+        - title: Register for support
+          url: /task-support-registration.html
+        - title: Get help
+          url: /task-get-help.html
     - title: Legal notices
       url: /legal-notices.html
