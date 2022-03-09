@@ -42,9 +42,9 @@ A Cloud Manager Connector in Azure is required to discover and manage Kubernetes
 
 Follow the steps in one of the links below.
 
-* link:task-creating-connectors-azure.html[Create a Connector from Cloud Manager] (recommended)
-* link:task-launching-azure-mktp.html[Create a Connector from the Azure Marketplace]
-* link:task-installing-linux.html[Install the Connector on an existing Linux host]
+* https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-connectors-azure.html[Create a Connector from Cloud Manager^] (recommended)
+* https://docs.netapp.com/us-en/cloud-manager-sync/task-launching-azure-mktp.html[Create a Connector from the Azure Marketplace^]
+* https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-linux.html[Install the Connector on an existing Linux host^]
 
 === Add the required permissions to an existing Connector (to discover a managed AKS cluster)
 
