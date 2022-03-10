@@ -42,9 +42,9 @@ A Cloud Manager Connector is required in AWS to discover and manage Kubernetes c
 
 Follow the steps in one of the links below.
 
-* link:task-creating-connectors-aws.html[Create a Connector from Cloud Manager] (recommended)
-* link:task-launching-aws-mktp.html[Create a Connector from the AWS Marketplace]
-* link:task-installing-linux.html[Install the Connector on an existing Linux host in AWS]
+* https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html[Create a Connector from Cloud Manager^] (recommended)
+* https://docs.netapp.com/us-en/cloud-manager-connector/task-launching-aws-mktp.html[Create a Connector from the AWS Marketplace^]
+* https://docs.netapp.com/us-en/cloud-manager-connector/task-installing-linux.html[Install the Connector on an existing Linux host in AWS^]
 
 === Add the required permissions to an existing Connector
 
