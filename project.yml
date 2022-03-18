@@ -16,22 +16,22 @@ sidebar:
       entries:
         - title: Learn about Kubernetes data management
           url: /concept-kubernetes.html
-        - title: Requirements
-          entries:
-            - title: Kubernetes clusters on AWS
-              url: /requirements/kubernetes-reqs-aws.html
-            - title: Kubernetes clusters on Azure
-              url: /requirements/kubernetes-reqs-aks.html
-            - title: Kubernetes clusters on Google Cloud
-              url: /requirements/kubernetes-reqs-gke.html
-        - title: Add Kubernetes clusters
-          entries:
-            - title: Add clusters on AWS
-              url: /task/task-kubernetes-discover-aws.html
-            - title: Add clusters on Azure
-              url: /task/task-kubernetes-discover-azure.html
-            - title: Add clusters on Google Cloud
-              url: /task/task-kubernetes-discover-gke.html
+    - title: Requirements
+      entries:
+        - title: Kubernetes clusters on AWS
+          url: /requirements/kubernetes-reqs-aws.html
+        - title: Kubernetes clusters on Azure
+          url: /requirements/kubernetes-reqs-aks.html
+        - title: Kubernetes clusters on Google Cloud
+          url: /requirements/kubernetes-reqs-gke.html
+    - title: Add Kubernetes clusters
+      entries:
+        - title: Add clusters on AWS
+          url: /task/task-kubernetes-discover-aws.html
+        - title: Add clusters on Azure
+          url: /task/task-kubernetes-discover-azure.html
+        - title: Add clusters on Google Cloud
+          url: /task/task-kubernetes-discover-gke.html
     - title: Enable data services on Kubernetes clusters
       url: /task/task-kubernetes-enable-services.html
     - title: Knowledge and support
@@ -71,6 +71,8 @@ homepage:
           url: /task/task-kubernetes-discover-azure.html
         - title: Add clusters on Google Cloud
           url: /task/task-kubernetes-discover-gke.html
+    - title: Enable data services
+      url: /task/task-kubernetes-enable-services.html
     - title: Get help with Cloud Manager
       links:
         - title: Register for support
