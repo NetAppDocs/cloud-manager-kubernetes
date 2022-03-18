@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-kubernetes-enable-services.html
+permalink: /task/task-kubernetes-enable-services.html
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support
 summary: After you add a managed-Kubernetes cluster to the Canvas, you can use NetApp's cloud data services for advanced data management.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-kubernetes-discover-azure.html
+permalink: /task/task-kubernetes-discover-azure.html
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, azure, aks, kubernetes support
 summary: Add an Kubernetes cluster to Cloud Manager so that you can start backing up persistent volumes to Azure.
 ---

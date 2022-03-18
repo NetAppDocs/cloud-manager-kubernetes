@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: kubernetes-reqs-aws.html
+permalink: /requirements/kubernetes-reqs-aws.html
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, aws
 summary: Before you can add an Amazon Elastic Kubernetes Service (Amazon EKS) cluster to Cloud Manager, you need to ensure that the following requirements have been met.
 ---

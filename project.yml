@@ -37,11 +37,14 @@ sidebar:
     - title: Knowledge and support
       entries:
         - title: Register for support
-          url: /task/task-support-registration.html
+          url: /support/task-support-registration.html
         - title: Get help
-          url: /task/task-get-help.html
+          url: /support/task-get-help.html
     - title: Legal notices
       url: /legal-notices.html
+product-family:
+    name: Cloud Manager
+    repo: cloud-manager-family
 homepage:
   tiles:
     - title: Get started with Kubernetes Clusters in Cloud Manager
@@ -71,9 +74,9 @@ homepage:
     - title: Get help with Cloud Manager
       links:
         - title: Register for support
-          url: /task/task-support-registration.html
+          url: /support/task-support-registration.html
         - title: Get help
-          url: /task/task-get-help.html
+          url: /support/task-get-help.html
     - title: Blogs & community
       links:
         - title: NetApp Community

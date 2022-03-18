@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: kubernetes-reqs-gke.html
+permalink: /requirements/kubernetes-reqs-gke.html
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, google, google cloud, gke, kubernetes support
 summary: You can add and manage managed Google Kubernetes Engine clusters (GKE) and self-managed Kubernetes clusters in Google using Cloud Manager. Before you can add the clusters to Cloud Manager, ensure the following requirements are met.
 ---
