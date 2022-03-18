@@ -72,7 +72,9 @@ homepage:
         - title: Add clusters on Google Cloud
           url: /task/task-kubernetes-discover-gke.html
     - title: Enable data services
-      url: /task/task-kubernetes-enable-services.html
+      links:
+        - title: Enable data services
+          url: /task/task-kubernetes-enable-services.html
     - title: Get help with Cloud Manager
       links:
         - title: Register for support
