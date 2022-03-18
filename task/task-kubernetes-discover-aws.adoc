@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-kubernetes-discover-aws.html
+permalink: /task/task-kubernetes-discover-aws.html
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, import kubernetes cluster, import, amazon s3, amazon, aws
 summary: Add an Amazon Elastic Kubernetes Service (Amazon EKS) clusters to Cloud Manager so that you can start backing up persistent volumes to Amazon S3.
 ---
