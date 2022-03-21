@@ -30,7 +30,7 @@ link:kubernetes-reqs-gke.html[Learn how to get started with Kubernetes clusters 
 
 You can now add and manage managed Azure Kubernetes clusters (AKS) and self-managed Kubernetes clusters in Azure using Cloud Manager.
 
-link:kubernetes-reqs-aks.html[Getting started with Kubernetes clusters in Azure^]
+link:kubernetes-reqs-aks.html[Getting started with Kubernetes clusters in Azure]
 
 == 28 Nov 2021
 
