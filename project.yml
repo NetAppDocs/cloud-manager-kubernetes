@@ -47,7 +47,7 @@ product-family:
     repo: cloud-manager-family
 homepage:
   tiles:
-    - title: Get started with Kubernetes Clusters in Cloud Manager
+    - title: Get started 
       links:
         - title: What's new
           url: /whats-new.html
@@ -55,7 +55,7 @@ homepage:
           url: /concept-kubernetes.html
         - title: Enable data services on Kubernetes clusters
           url: /task/task-kubernetes-enable-services.html
-    - title: Requirements for working with Kubernetes clusters
+    - title: Requirements
       links:
         - title: Kubernetes clusters on AWS
           url: /requirements/kubernetes-reqs-aws.html
