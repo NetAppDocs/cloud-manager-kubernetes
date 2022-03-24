@@ -53,8 +53,6 @@ homepage:
           url: /whats-new.html
         - title: Learn about Kubernetes data management
           url: /concept-kubernetes.html
-        - title: Enable data services on Kubernetes clusters
-          url: /task/task-kubernetes-enable-services.html
     - title: Requirements
       links:
         - title: Kubernetes clusters on AWS
