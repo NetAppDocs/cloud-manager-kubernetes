@@ -10,7 +10,7 @@ summary: You can add and manage managed Google Kubernetes Engine clusters (GKE) 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can add and manage managed Google Kubernetes Engine (GKE) clusters and self-managed Kubernetes clusters in Google using Cloud Manager. Before you can add the clusters to Cloud Manager, ensure the following requirements are met.
@@ -78,7 +78,7 @@ The simplest way to provide this connectivity is to deploy the Connector and Clo
 
 Here's an example that shows each component in the same VPC.
 
-image:/media/diagram-kubernetes-google-cloud.png[An architectural diagram of an AKS Kubernetes cluster and its connection to a Connecter and Cloud Volumes ONTAP in the same VPC.]
+image:diagram-kubernetes-google-cloud.png[An architectural diagram of an AKS Kubernetes cluster and its connection to a Connecter and Cloud Volumes ONTAP in the same VPC.]
 
 == Set up RBAC authorization
 
@@ -99,7 +99,7 @@ gcloud iam service-accounts describe <service-account-email>
 
 * In the Service Account Details on the link:https://console.cloud.google.com[Cloud Console^].
 +
-image:/media/screenshot-gke-unique-id.png[A screenshot of the service account details in Cloud Console.]
+image:screenshot-gke-unique-id.png[A screenshot of the service account details in Cloud Console.]
 
 .Steps
 

@@ -10,7 +10,7 @@ summary: You can discover or import Kubernetes clusters to Cloud Manager so that
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can discover or import Kubernetes clusters to Cloud Manager so that you can back up persistent volumes to Google Cloud.
@@ -24,23 +24,23 @@ You can discover a fully-managed or self-managed Kubernetes cluster. Managed clu
 
 . Select *Google Cloud Platform* > *Kubernetes Cluster* and click *Next*.
 +
-image:/media/screenshot-discover-kubernetes-gke.png[A screenshot of the Add Working Environment page showing Google Cloud Platform and Kubernetes Cluster selected.]
+image:screenshot-discover-kubernetes-gke.png[A screenshot of the Add Working Environment page showing Google Cloud Platform and Kubernetes Cluster selected.]
 
 . Select *Discover Cluster* and click *Next*.
 
 . To select a Kubernetes cluster in a different Google Cloud Project, click *Edit project* and choose an available project.
 +
-image:/media/screenshot-k8s-gke-change-project.png[A screenshot of the Edit project page showing the drop-down of available Google Cloud Projects.]
+image:screenshot-k8s-gke-change-project.png[A screenshot of the Edit project page showing the drop-down of available Google Cloud Projects.]
 
 . Select a Kubernetes cluster and click *Next*.
 +
-image:/media/screenshot-k8s-gke-discover.png[A screenshot of the Discover a Kubernetes Cluster page showing a selected  Kubernetes cluster.]
+image:screenshot-k8s-gke-discover.png[A screenshot of the Discover a Kubernetes Cluster page showing a selected  Kubernetes cluster.]
 
 .Result
 
 Cloud Manager adds the Kubernetes cluster to the Canvas.
 
-image:/media/screenshot-k8s-gke-canvas.png[A screenshot of the Canvas in Cloud Manager that shows a Kubernetes cluster.]
+image:screenshot-k8s-gke-canvas.png[A screenshot of the Canvas in Cloud Manager that shows a Kubernetes cluster.]
 
 == Import a Cluster
 You can import a self-managed Kubernetes cluster using a Kubernetes configuration file.
@@ -58,7 +58,7 @@ You will need Certificate Authority, Client Key, and Client Certificate certific
 
 . Upload a Kubernetes configuration file in YAML format.
 +
-image:/media/screenshot-k8s-gke-import-1.png[A screenshot of the import Kubernetes cluster page with configuration file and available clusters table.]
+image:screenshot-k8s-gke-import-1.png[A screenshot of the import Kubernetes cluster page with configuration file and available clusters table.]
 
 .Result
 
