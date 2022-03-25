@@ -10,7 +10,7 @@ summary: Before you can add an Amazon Elastic Kubernetes Service (Amazon EKS) cl
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can add managed Amazon Elastic Kubernetes Service (EKS) clusters or self-managed Kubernetes clusters on AWS to Cloud Manager. Before you can add the clusters to Cloud Manager, you need to ensure that the following requirements are met.
@@ -56,11 +56,11 @@ Starting in the 3.9.13 release, any _newly_ created Connectors include three new
 
 . Select the Connector instance, click *Security*, and click the name of the IAM role to view the role in the IAM service.
 +
-image:/media/screenshot-aws-iam-role.png[A screenshot of the AWS console that shows the name of the IAM role in the Security tab.]
+image:../media/screenshot-aws-iam-role.png[A screenshot of the AWS console that shows the name of the IAM role in the Security tab.]
 
 . In the *Permissions* tab, expand the policy and click *Edit policy*.
 +
-image:/media/screenshot-aws-edit-policy.png[A screenshot of the AWS console that shows the Edit policy button in the Permissions tab.]
+image:../media/screenshot-aws-edit-policy.png[A screenshot of the AWS console that shows the Edit policy button in the Permissions tab.]
 
 . Click *JSON* and add the following permissions under the first set of actions:
 +
@@ -85,11 +85,11 @@ The simplest way to provide this connectivity is to deploy the Connector and Clo
 
 Here's an example that shows each component in the same VPC.
 
-image:/media/diagram-kubernetes-eks.png[An architectural diagram of an EKS Kubernetes cluster and its connection to a Connecter and Cloud Volumes ONTAP in the same VPC.]
+image:../media/diagram-kubernetes-eks.png[An architectural diagram of an EKS Kubernetes cluster and its connection to a Connecter and Cloud Volumes ONTAP in the same VPC.]
 
 And here's another example that shows an EKS cluster running in a different VPC. In this example, VPC peering provides a connection between the VPC for the EKS cluster and the VPC for the Connector and Cloud Volumes ONTAP.
 
-image:/media/diagram_kubernetes.png[An architectural diagram of an EKS Kubernetes cluster and its connection to a Connecter and Cloud Volumes ONTAP in a separate VPC.]
+image:../media/diagram_kubernetes.png[An architectural diagram of an EKS Kubernetes cluster and its connection to a Connecter and Cloud Volumes ONTAP in a separate VPC.]
 
 == Set up RBAC authorization
 
