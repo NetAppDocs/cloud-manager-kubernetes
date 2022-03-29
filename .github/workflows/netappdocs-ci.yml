@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: "Repository Checkout"
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: "Framework Checkout"
         uses: actions/checkout@v2
@@ -55,6 +57,8 @@ jobs:
     steps:
       - name: "Repository Checkout"
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: "Jekyll Checkout"
         uses: actions/checkout@v2
