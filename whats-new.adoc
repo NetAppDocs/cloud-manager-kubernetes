@@ -1,0 +1,48 @@
+---
+sidebar: sidebar
+permalink: whats-new.html
+keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes
+summary: Learn what's new in Kubernetes in Cloud Manager.
+---
+
+= What's new with Kubernetes in Cloud Manager
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Learn what's new in Kubernetes in Cloud Manager.
+
+//tag::whats-new[]
+== 27 Feb 2022
+
+=== Support for Kubernetes clusters in Google Cloud
+
+You can now add and manage managed Google Kubernetes Engine (GKE) clusters and self-managed Kubernetes clusters in Google Cloud using Cloud Manager.
+
+link:kubernetes-reqs-gke.html[Learn how to get started with Kubernetes clusters in Google Cloud].
+
+== 11 Jan 2022
+
+=== Support for Kubernetes clusters in Azure
+
+You can now add and manage managed Azure Kubernetes clusters (AKS) and self-managed Kubernetes clusters in Azure using Cloud Manager.
+
+link:kubernetes-reqs-aks.html[Getting started with Kubernetes clusters in Azure]
+
+== 28 Nov 2021
+
+=== Support for Kubernetes clusters in AWS
+
+You can now add your managed-Kubernetes clusters to Cloud Manager's Canvas for advanced data management.
+
+* Discover Amazon EKS clusters
+* Back up persistent volumes using Cloud Backup
+
+link:concept-kubernetes.html[Learn more about Kubernetes support].
+
+TIP: The existing Kubernetes service (available through the *K8s* tab) has been deprecated and will be removed in a future release.
+
+//end::whats-new[]
