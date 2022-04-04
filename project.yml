@@ -96,7 +96,7 @@ homepage:
        - title: Remove clusters
          url: /task/task-k8s-manage-remove-cluster.html
        - title: Enable data services
-         url: /task/task/task-kubernetes-enable-services.html
+         url: /task/task-kubernetes-enable-services.html
     - title: Get help with Cloud Manager
       links:
         - title: Register for support
