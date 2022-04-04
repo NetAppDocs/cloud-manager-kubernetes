@@ -42,8 +42,8 @@ A Cloud Manager Connector in Google is required to discover and manage Kubernete
 
 Follow the steps in one of the links below.
 
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-gcp.html[Create a Connector from Cloud Manager^] (recommended)
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-installing-linux.html[Install the Connector on an existing Linux host^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html[Create a Connector from Cloud Manager^] (recommended)
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html[Install the Connector on an existing Linux host^]
 
 === Add the required permissions to an existing Connector (to discover a managed GKE cluster)
 
