@@ -17,6 +17,8 @@ sidebar:
       entries:
         - title: Learn about Kubernetes data management
           url: /concept-kubernetes.html
+        - title: Quick start
+          url: /task-k8s-quick-start.html
     - title: Requirements
       entries:
         - title: Kubernetes clusters on AWS
@@ -33,8 +35,19 @@ sidebar:
           url: /task/task-kubernetes-discover-azure.html
         - title: Add clusters on Google Cloud
           url: /task/task-kubernetes-discover-gke.html
-    - title: Enable data services on Kubernetes clusters
-      url: /task/task-kubernetes-enable-services.html
+    - title: Manage Kubernetes clusters
+      url: /concept-manage-k8s.html
+      entries:
+        - title: Install Astra Trident
+          url: /task/task-k8s-manage-trident.html
+        - title: Manage storage classes
+          url: /task/task-k8s-manage-storage-classes.html
+        - title: View persistent volumes
+          url: /task/task-k8s-manage-persistent-volumes.html
+        - title: Remove clusters
+          url: /task/task-k8s-manage-remove-cluster.html
+        - title: Enable NetApp cloud data services
+          url: /task/task-kubernetes-enable-services.html
     - title: Knowledge and support
       entries:
         - title: Register for support
@@ -54,6 +67,8 @@ homepage:
           url: /whats-new.html
         - title: Learn about Kubernetes data management
           url: /concept-kubernetes.html
+        - title: Quick start
+          url: /task-k8s-quick-start.html
     - title: Requirements
       links:
         - title: Kubernetes clusters on AWS
@@ -70,10 +85,18 @@ homepage:
           url: /task/task-kubernetes-discover-azure.html
         - title: Add clusters on Google Cloud
           url: /task/task-kubernetes-discover-gke.html
-    - title: Enable data services
+    - title: Manage Kubernetes clusters
       links:
-        - title: Enable data services
-          url: /task/task-kubernetes-enable-services.html
+       - title: Install Astra Trident
+         url: /task-k8s-manage-trident.html
+       - title: Manage storage classes
+         url: /task-k8s-manage-storage-classes.html
+       - title: View persistent volumes
+         url: /task-k8s-manage-persistent-volumes.html
+       - title: Remove clusters
+         url: /task-k8s-manage-remove-cluster.html
+       - title: Enable data services
+         url: /task/task-kubernetes-enable-services.html
     - title: Get help with Cloud Manager
       links:
         - title: Register for support

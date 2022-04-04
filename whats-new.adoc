@@ -16,6 +16,20 @@ summary: Learn what's new in Kubernetes in Cloud Manager.
 Learn what's new in Kubernetes in Cloud Manager.
 
 //tag::whats-new[]
+== 04 Apr 2022
+
+=== Manage Kubernetes clusters using the Cloud Manager resource page
+
+* Kubernetes cluster management now has enhanced integration directly from the cluster working environment. You can now take the following actions from the cluster resource page.
+
+** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html[Install Astra Trident]
+** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html[Add storage classes]
+** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html[View persistent volumes]
+** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html[Remove clusters]
+** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html[Enable data services]
+
+* A new link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html[Quick start] gets you up and running quickly.
+
 == 27 Feb 2022
 
 === Support for Kubernetes clusters in Google Cloud

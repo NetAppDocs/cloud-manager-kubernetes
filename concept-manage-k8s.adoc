@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: concept-manage-k8s.html
+keywords: overview, manage, k8s, kubernetes
+summary: You can use Cloud Manager to install Astra Trident, configure storage classes, remove clusters, and enable data services.
+---
+
+= Manage Kubernetes clusters
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+You can use Cloud Manager to install Astra Trident, configure storage classes, remove clusters, and enable data services.
+
+== Features
+
+After adding Kubernetes clusters to Cloud Manager, you can manage the clusters from the resource page. To open the resource page, double-click the Kubernetes working environment on the Canvas.
+
+image:screenshot-k8s-resource-page.png[A screenshot of the Kubernetes resource page showing details for the cluster.^]
+
+From the resource page you can:
+
+* View the Kubernetes cluster status.
+* Confirm Astra Trident is installed. See link:task-k8s-manage-trident.html[Install Astra Trident].
+* Add and remove storage classes. See link:task-k8s-manage-storage-classes.html[Manage storage classes].
+* View persistent volumes. See link:task-k8s-manage-persistent-volumes.html[View persistent volumes].
+* Remove Kubernetes clusters from the workspace. See link:task-k8s-manage-remove-cluster.html[Remove clusters].
+* Activate or view Cloud Backup. See link:task-kubernetes-enable-services.html[Use NetApp cloud data services].

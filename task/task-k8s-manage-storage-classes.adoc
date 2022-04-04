@@ -1,0 +1,94 @@
+---
+sidebar: sidebar
+permalink: /task/task-k8s-manage-storage-classes.html
+keywords: kubernetes, k8s, add storage class, remove storage class
+summary: After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to manage storage classes.
+---
+
+= Manage storage classes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to manage storage classes.
+
+NOTE: If no storage classes are defined, the cluster will show there is an action required.
+
+== Add storage classes
+
+.Steps
+
+. Double-click the Kubernetes working environment on the Canvas or click *Enter Working Environment*.
+
+. Confirm one of the four most recent versions of Astra Trident is installed.
+
+. Click *Add Storage Class* to define the storage class for the Kubernetes cluster.
++
+image:screenshot-k8s-add-storage-class.png[A screenshot of the K8s resource page showing the add storage class button.]
+
+. Provide a name for the storage class, select definition options, and click *Next*.
++
+image:screenshot-k8s-define-storage-class.png[A screenshot showing definition options for K8s storage class.]
+
+. Select a working environment to connect to the cluster. Click *Add*.
++
+image:screenshot-k8s-we-storage-class.png[A screenshot showing working environment selection for the Kubernetes cluster.]
+
+.Results
+You can click to view the storage class from the resource page for the Kubernetes cluster.
+
+image:screenshot-k8s-view-storage-class.png[A screenshot showing "View Storage Class" from the Kubernetes resource page.]
+
+== View working environment details
+
+.Steps
+
+. Double-click the Kubernetes working environment on the Canvas or click *Enter Working Environment*.
+
+. Click the *Storage Classes* tab.
+
+. Click the information icon to view details for the working environment.
+
+.Results
+The working environment details panel opens.
+
+image:screenshot-k8s-info-storage-class.png[A screenshot of the working environment details for the Kubernetes cluster.]
+
+== Set default storage class
+
+.Steps
+
+. Double-click the Kubernetes working environment on the Canvas or click *Enter Working Environment*.
+
+. Click the *Storage Classes* tab.
+
+. Click the action menu for the storage class and click *Set as Default*.
++
+image:screenshot-k8s-default-storage-class.png[A screenshot of the action menu setting the default storage class.]
+
+.Results
+The selected storage class is set as the default.
+
+image:screenshot-k8s-default-set-storage-class.png[A screenshot showing the default storage class.]
+
+== Remove storage class
+
+.Steps
+
+. Double-click the Kubernetes working environment on the Canvas or click *Enter Working Environment*.
+
+. Click the *Storage Classes* tab.
+
+. Click the action menu for the storage class and click *Set as Default*.
++
+image:screenshot-k8s-remove-storage-class.png[A screenshot of the action menu to remove the storage class.]
+
+. Click *Remove* to confirm removal of the storage class.
++
+image:screenshot-k8s-remove-confirm-storage-class.png[A screenshot of the confirmation screen to remove the storage class. ]
+
+.Results
+The selected storage class is removed.

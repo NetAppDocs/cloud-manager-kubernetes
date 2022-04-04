@@ -20,7 +20,9 @@ This topic uses _Kubernetes cluster_ where configuration is the same for EKS and
 == Requirements
 
 Astra Trident::
-The Kubernetes cluster must have NetApp Astra Trident installed. One of the four most recent versions of Astra Trident is required. https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html[Go to the Astra Trident docs for installation steps^].
+One of the four most recent versions of Astra Trident is required. You can install Astra Trident directly from Cloud Manager. You should link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html[review the prerequisites^] prior to installing Astra Trident.
+
+To upgrade Astra Trident, link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html[upgrade with the operator^].
 
 Cloud Volumes ONTAP::
 Cloud Volumes ONTAP for AWS must be set up as backend storage for the cluster. https://docs.netapp.com/us-en/trident/trident-use/backends.html[Go to the Astra Trident docs for configuration steps^].
@@ -42,9 +44,9 @@ A Cloud Manager Connector is required in AWS to discover and manage Kubernetes c
 
 Follow the steps in one of the links below.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html[Create a Connector from Cloud Manager^] (recommended)
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html[Create a Connector from the AWS Marketplace^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html[Install the Connector on an existing Linux host in AWS^]
+* link:task_creating_connectors_aws.html[Create a Connector from Cloud Manager] (recommended)
+* link:task_launching_aws_mktp.html[Create a Connector from the AWS Marketplace]
+* link:task_installing_linux.html[Install the Connector on an existing Linux host in AWS]
 
 === Add the required permissions to an existing Connector
 
@@ -60,7 +62,7 @@ image:screenshot-aws-iam-role.png[A screenshot of the AWS console that shows the
 
 . In the *Permissions* tab, expand the policy and click *Edit policy*.
 +
-image:../media/screenshot-aws-edit-policy.png[A screenshot of the AWS console that shows the Edit policy button in the Permissions tab.]
+image:screenshot-aws-edit-policy.png[A screenshot of the AWS console that shows the Edit policy button in the Permissions tab.]
 
 . Click *JSON* and add the following permissions under the first set of actions:
 +
@@ -95,12 +97,104 @@ image:diagram_kubernetes.png[An architectural diagram of an EKS Kubernetes clust
 
 You need to authorize the Connector role on each Kubernetes cluster so the Connector can discover and manage a cluster.
 
+Different authorization is required to enable different functionality.
+
+Backup and restore::
+Backup and restore requires only basic authorization.
+
+Add storage classes::
+Expanded authorization is required to add storage classes using Cloud Manager.
+
+Install Astra trident::
+You need to provide full authorization for Cloud Manager to install Astra Trident.
++
+NOTE: When installing Astra Trident, Cloud Manager installs the Astra Trident backend and Kubernetes secret that contains the credentials Astra Trident needs to communicate with the storage cluster.
+
 .Steps
 
 . Create a cluster role and role binding.
 
-.. Create a YAML file that includes the following text.
+.. Create a YAML file that includes the following text based on your authorization requirements.
 +
+[role="tabbed-block"]
+====
+
+.Backup/restore
+--
+
+Add basic authorization to enable backup and restore for Kubernetes clusters.
+
+[source,yaml]
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - namespaces
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumes
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumeclaims
+      verbs:
+          - list
+          - create
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentorchestrators
+      verbs:
+          - get
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+subjects:
+    - kind: Group
+      name: cloudmanager-access-group
+      apiGroup: rbac.authorization.k8s.io
+roleRef:
+    kind: ClusterRole
+    name: cloudmanager-access-clusterrole
+    apiGroup: rbac.authorization.k8s.io
+--
+
+.Storage classes
+--
+
+Add expanded authorization to add storage classes using Cloud Manager.
+
 [source,yaml]
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -114,25 +208,34 @@ rules:
           - namespaces
           - persistentvolumeclaims
           - persistentvolumes
+          - pods
+          - pods/exec
       verbs:
           - get
           - list
           - create
+          - delete
     - apiGroups:
           - storage.k8s.io
       resources:
           - storageclasses
       verbs:
           - get
+          - create
           - list
+          - delete
+          - patch
     - apiGroups:
           - trident.netapp.io
       resources:
           - tridentbackends
           - tridentorchestrators
+          - tridentbackendconfigs
       verbs:
           - get
           - list
+          - create
+          - delete
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -147,53 +250,28 @@ roleRef:
     name: cloudmanager-access-clusterrole
     apiGroup: rbac.authorization.k8s.io
 
+--
+
+.Install Trident
+--
+
+Use the command line to provide full authorization and enable Cloud Manager to install Astra Trident.
+
+[source,cli]
+
+eksctl create iamidentitymapping --cluster < > --region < > --arn < > --group "system:masters" --username system:node:{{EC2PrivateDNSName}}
+
+--
+====
+
 .. Apply the configuration to a cluster.
 +
 [source,kubectl]
 kubectl apply -f <file-name>
 
-. Create an identity mapping to the permissions group.
+. Create an identity mapping to the permissions group using `eksctl`. An example is provided below.
 +
-[role="tabbed-block"]
-====
-
-.Use eksctl
---
-
-Use eksctl to create an IAM identity mapping between a cluster and the IAM role for the Cloud Manager Connector.
-
-https://eksctl.io/usage/iam-identity-mappings/[Go to the eksctl documentation for full instructions^].
-
-An example is provided below.
-
 [source,eksctl]
 eksctl create iamidentitymapping --cluster <eksCluster> --region <us-east-2> --arn <ARN of the Connector IAM role> --group cloudmanager-access-group --username system:node:{{EC2PrivateDNSName}}
---
-
-.Edit aws-auth
---
-Directly edit the aws-auth ConfigMap to add RBAC access to the IAM role for the Cloud Manager Connector.
-
-https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html[Go to the AWS EKS documentation for full instructions^].
-
-An example is provided below.
-
-[source,yaml]
-apiVersion: v1
-data:
-  mapRoles: |
-    - groups:
-      - cloudmanager-access-group
-      rolearn: <ARN of the Connector IAM role>
-     username: system:node:{{EC2PrivateDNSName}}
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2021-09-30T21:09:18Z"
-  name: aws-auth
-  namespace: kube-system
-  resourceVersion: "1021"
-  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
-  uid: dcc31de5-3838-11e8-af26-02e00430057c
---
-
-====
++
+https://eksctl.io/usage/iam-identity-mappings/[Go to the eksctl documentation for full instructions^].

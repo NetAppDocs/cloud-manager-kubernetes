@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: concept-kubernetes.html
 keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support
-summary: Add managed-Kubernetes clusters to Cloud Manager for advanced data management.
+summary: Astra Trident is a fully-supported open source project maintained by NetApp. Astra Trident integrates natively with Kubernetes and its Persistent Volume framework to seamlessly provision and manage volumes from systems running any combination of NetApp storage platforms.
 ---
 
-= Kubernetes overview
+= Kubernetes data management in Cloud Manager
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,18 +13,29 @@ summary: Add managed-Kubernetes clusters to Cloud Manager for advanced data mana
 :imagesdir: ./media/
 
 [.lead]
-Add managed-Kubernetes clusters to Cloud Manager for advanced data management.
+Astra Trident is a fully-supported open source project maintained by NetApp. Astra Trident integrates natively with Kubernetes and its Persistent Volume framework to seamlessly provision and manage volumes from systems running any combination of NetApp storage platforms. link:https://docs.netapp.com/us-en/trident/index.html[Learn more about Trident^].
 
 == Features
+You can directly manage your Kubernetes clusters using Cloud Manager.
 
-* Add clusters to the Canvas to view and manage them as part of your hybrid cloud infrastructure
-* Back up persistent volumes using Cloud Backup Service
-+
-image:screenshot-kubernetes-backup.png[A screenshot of the Kubernetes page in the Cloud Backup Service which shows five backup jobs for a Kubernetes cluster.]
+* Install Astra Trident.
+* Add and manage clusters as part of your hybrid cloud infrastructure.
+* Add and manage storage classes and connect them to Working Environments.
+* Back up persistent volumes using Cloud Backup Service.
 
 == Supported Kubernetes deployments
 
-Cloud Manager supports managed-Kubernetes clusters running in Amazon Elastic Kubernetes Service (Amazon EKS) and Microsoft Azure Kubernetes Service (AKS).
+Cloud Manager supports managed-Kubernetes clusters running in:
+
+* link:kubernetes-reqs-aws.html[Amazon Elastic Kubernetes Service (Amazon EKS)]
+* link:kubernetes-reqs-aks.html[Microsoft Azure Kubernetes Service (AKS)]
+* link:kubernetes-reqs-gke.html[Google Kubernetes Engine (GKE)]
+
+== Supported Astra Trident deployments
+
+One of the four most recent versions of Astra Trident is required. You can install Astra Trident directly from Cloud Manager. You should link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html[review the prerequisites^] prior to installation.
+
+To upgrade Astra Trident, link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html[upgrade with the operator^].
 
 == Supported backend storage
 

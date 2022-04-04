@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: /task/task-k8s-manage-remove-cluster.html
+keywords: kubernetes, k8s, remove cluster
+summary: After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to remove clusters from the workspace.
+---
+
+= Remove Kubernetes clusters from the workspace
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to remove clusters from the workspace.
+
+.Steps
+
+. Double-click the Kubernetes working environment on the Canvas  or click *Enter Working Environment*.
+
+. At the top right of the page, select the actions menu and click *Remove from Workspace*.
++
+image:screenshot-k8s-remove-cluster.png[A screenshot showing menu to remove Kubernetes cluster from the workspace.]
+
+. Click *Remove* to confirm removal of the cluster from the workspace. You can rediscover this cluster at any time.
++
+image:screenshot-k8s-confirm-remove-cluster.png[A screenshot of the page confirming removal of the Kubernetes cluster from the workspace.]
+
+.Results
+The Kubernetes cluster is removed from the workspace and is no longer visible on the Canvas.
