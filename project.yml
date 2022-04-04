@@ -17,7 +17,7 @@ sidebar:
         - title: Learn about Kubernetes data management
           url: /concept-kubernetes.html
         - title: Quick start
-          url: /task-k8s-quick-start.html
+          url: /task/task-k8s-quick-start.html
     - title: Requirements
       entries:
         - title: Kubernetes clusters on AWS
@@ -87,15 +87,15 @@ homepage:
     - title: Manage Kubernetes clusters
       links:
        - title: Install Astra Trident
-         url: /task-k8s-manage-trident.html
+         url: /task/task-k8s-manage-trident.html
        - title: Manage storage classes
-         url: /task-k8s-manage-storage-classes.html
+         url: /task/task-k8s-manage-storage-classes.html
        - title: View persistent volumes
-         url: /task-k8s-manage-persistent-volumes.html
+         url: /task/task-k8s-manage-persistent-volumes.html
        - title: Remove clusters
-         url: /task-k8s-manage-remove-cluster.html
+         url: /task/task-k8s-manage-remove-cluster.html
        - title: Enable data services
-         url: /task/task-kubernetes-enable-services.html
+         url: /task/task/task-kubernetes-enable-services.html
     - title: Get help with Cloud Manager
       links:
         - title: Register for support
