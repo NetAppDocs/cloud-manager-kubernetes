@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: /task/task-k8s-manage-persistent-volumes.html
+keywords: kubernetes, k8s, view persistent volume
+summary: After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to view connected persistent volumes.
+---
+
+= View persistent volumes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to view persistent volumes.
+
+.Steps
+
+. Double-click the Kubernetes working environment on the Canvas or click *Enter Working Environment*.
+
+. Click *View Volumes* from the *Overview* tab or click the *Persistent Volumes* tab. If no persistent volumes are configured, see link:https://docs.netapp.com/us-en/trident/trident-concepts/provisioning.html[Provisioning^] for details on provisioning volumes in Astra Trident.
+
+.Results
+A table of the configured persistent volumes displays.
+
+image:screenshot-k8s-volume-table.png[A screenshot of the persistent volumes table.]

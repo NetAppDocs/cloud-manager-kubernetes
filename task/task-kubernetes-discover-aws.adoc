@@ -13,7 +13,7 @@ summary: Add an Amazon Elastic Kubernetes Service (Amazon EKS) clusters to Cloud
 :imagesdir: ../media/
 
 [.lead]
-You can discover or import Kubernetes clusers to Cloud Manager so you can back up persistent volumes to Amazon S3.
+You can discover or import Kubernetes clusters to Cloud Manager so you can back up persistent volumes to Amazon S3.
 
 == Discover a cluster
 You can discover a fully-managed or self-managed Kubernetes cluster. Managed clusters must be discovered; they cannot be imported.
