@@ -15,7 +15,7 @@ summary: You can add and manage managed Google Kubernetes Engine clusters (GKE) 
 [.lead]
 You can add and manage managed Google Kubernetes Engine (GKE) clusters and self-managed Kubernetes clusters in Google using Cloud Manager. Before you can add the clusters to Cloud Manager, ensure the following requirements are met.
 
-This topic uses _Kubernetes cluster_ where configuration is the same for GKE and self-managed Kubernetes clusters. The cluster type is specified where configuration differs.
+NOTE: This topic uses _Kubernetes cluster_ where configuration is the same for GKE and self-managed Kubernetes clusters. The cluster type is specified where configuration differs.
 
 == Requirements
 
@@ -44,8 +44,8 @@ A Cloud Manager Connector in Google is required to discover and manage Kubernete
 
 Follow the steps in one of the links below.
 
-* link:task_creating_connectors_gcp.html[Create a Connector from Cloud Manager] (recommended)
-* link:task_installing_linux.html[Install the Connector on an existing Linux host]
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html[Create a Connector from Cloud Manager^] (recommended)
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html[Install the Connector on an existing Linux host^]
 
 === Add the required permissions to an existing Connector (to discover a managed GKE cluster)
 

@@ -15,7 +15,7 @@ summary: After you add a managed-Kubernetes cluster to the Canvas, you can use C
 [.lead]
 After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to confirm a compatible Astra Trident installation or install Astra Trident.  One of the four most recent versions of Astra Trident is required.
 
-To learn more about Astra Trident, see link:https://docs.netapp.com/us-en/trident/index.html[Astra Trident documentation].
+To learn more about Astra Trident, see link:https://docs.netapp.com/us-en/trident/index.html[Astra Trident documentation^].
 
 NOTE: If Astra Trident is not installed, or an incompatible version of Astra Trident is installed, the cluster will show there is an action required.
 
