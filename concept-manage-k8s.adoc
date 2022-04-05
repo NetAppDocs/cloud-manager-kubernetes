@@ -23,8 +23,8 @@ image:screenshot-k8s-resource-page.png[A screenshot of the Kubernetes resource p
 From the resource page you can:
 
 * View the Kubernetes cluster status.
-* Confirm Astra Trident is installed. See link:/task/task-k8s-manage-trident.html[Install Astra Trident].
-* Add and remove storage classes. See link:/task/task-k8s-manage-storage-classes.html[Manage storage classes].
-* View persistent volumes. See link:/task/task-k8s-manage-persistent-volumes.html[View persistent volumes].
-* Remove Kubernetes clusters from the workspace. See link:/task/task-k8s-manage-remove-cluster.html[Remove clusters].
-* Activate or view Cloud Backup. See link:/task/task-kubernetes-enable-services.html[Use NetApp cloud data services].
+* Confirm Astra Trident is installed. See link:./task/task-k8s-manage-trident.html[Install Astra Trident].
+* Add and remove storage classes. See link:./task/task-k8s-manage-storage-classes.html[Manage storage classes].
+* View persistent volumes. See link:./task/task-k8s-manage-persistent-volumes.html[View persistent volumes].
+* Remove Kubernetes clusters from the workspace. See link:./task/task-k8s-manage-remove-cluster.html[Remove clusters].
+* Activate or view Cloud Backup. See link:./task/task-kubernetes-enable-services.html[Use NetApp cloud data services].
