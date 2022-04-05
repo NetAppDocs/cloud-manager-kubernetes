@@ -15,7 +15,7 @@ summary: Before you can add an Amazon Elastic Kubernetes Service (Amazon EKS) cl
 [.lead]
 You can add managed Amazon Elastic Kubernetes Service (EKS) clusters or self-managed Kubernetes clusters on AWS to Cloud Manager. Before you can add the clusters to Cloud Manager, you need to ensure that the following requirements are met.
 
-This topic uses _Kubernetes cluster_ where configuration is the same for EKS and self-managed Kubernetes clusters. The cluster type is specified where configuration differs.
+NOTE: This topic uses _Kubernetes cluster_ where configuration is the same for EKS and self-managed Kubernetes clusters. The cluster type is specified where configuration differs.
 
 == Requirements
 
@@ -44,9 +44,9 @@ A Cloud Manager Connector is required in AWS to discover and manage Kubernetes c
 
 Follow the steps in one of the links below.
 
-* link:task_creating_connectors_aws.html[Create a Connector from Cloud Manager] (recommended)
-* link:task_launching_aws_mktp.html[Create a Connector from the AWS Marketplace]
-* link:task_installing_linux.html[Install the Connector on an existing Linux host in AWS]
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html[Create a Connector from Cloud Manager^] (recommended)
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html[Create a Connector from the AWS Marketplace^]
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html[Install the Connector on an existing Linux host in AWS^]
 
 === Add the required permissions to an existing Connector
 

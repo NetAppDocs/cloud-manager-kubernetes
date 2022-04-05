@@ -16,21 +16,21 @@ summary: Learn what's new in Kubernetes in Cloud Manager.
 Learn what's new in Kubernetes in Cloud Manager.
 
 //tag::whats-new[]
-== 04 Apr 2022
+== 4 April 2022
 
 === Manage Kubernetes clusters using the Cloud Manager resource page
 
-* Kubernetes cluster management now has enhanced integration directly from the cluster working environment. You can now take the following actions from the cluster resource page.
+Kubernetes cluster management now has enhanced integration directly from the cluster working environment. A new link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html[Quick start] gets you up and running quickly.
 
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html[Install Astra Trident]
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html[Add storage classes]
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html[View persistent volumes]
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html[Remove clusters]
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html[Enable data services]
+You can now take the following actions from the cluster resource page.
 
-* A new link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html[Quick start] gets you up and running quickly.
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html[Install Astra Trident]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html[Add storage classes]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html[View persistent volumes]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html[Remove clusters]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html[Enable data services]
 
-== 27 Feb 2022
+== 27 February 2022
 
 === Support for Kubernetes clusters in Google Cloud
 
@@ -38,7 +38,7 @@ You can now add and manage managed Google Kubernetes Engine (GKE) clusters and s
 
 link:kubernetes-reqs-gke.html[Learn how to get started with Kubernetes clusters in Google Cloud].
 
-== 11 Jan 2022
+== 11 January 2022
 
 === Support for Kubernetes clusters in Azure
 
@@ -46,7 +46,9 @@ You can now add and manage managed Azure Kubernetes clusters (AKS) and self-mana
 
 link:kubernetes-reqs-aks.html[Getting started with Kubernetes clusters in Azure]
 
-== 28 Nov 2021
+//end::whats-new[]
+
+== 28 November 2021
 
 === Support for Kubernetes clusters in AWS
 
@@ -58,5 +60,3 @@ You can now add your managed-Kubernetes clusters to Cloud Manager's Canvas for a
 link:concept-kubernetes.html[Learn more about Kubernetes support].
 
 TIP: The existing Kubernetes service (available through the *K8s* tab) has been deprecated and will be removed in a future release.
-
-//end::whats-new[]
