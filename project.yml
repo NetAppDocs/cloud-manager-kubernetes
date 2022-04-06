@@ -1,5 +1,6 @@
 settings:
   name: Kubernetes clusters
+  platform: cloud
   internal:
     pdf_enabled: true
   prod:
