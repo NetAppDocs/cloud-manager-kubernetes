@@ -6,7 +6,7 @@ lead: Add your managed-Kubernetes clusters to Cloud Manager for advanced data ma
 summary: Add your managed-Kubernetes clusters to Cloud Manager for advanced data management.
 ---
 
-= Kubernetes documentation
+= Kubernetes clusters documentation
 :hardbreaks:
 :nofooter:
 :icons: font
