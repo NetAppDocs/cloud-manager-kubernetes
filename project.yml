@@ -69,7 +69,7 @@ homepage:
         - title: Learn about Kubernetes data management
           url: /concept-kubernetes.html
         - title: Quick start
-          url: /task//task-k8s-quick-start.html
+          url: /task/task-k8s-quick-start.html
     - title: Requirements
       links:
         - title: Kubernetes clusters on AWS
