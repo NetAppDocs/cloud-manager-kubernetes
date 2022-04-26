@@ -15,15 +15,15 @@ summary: After you add a managed-Kubernetes cluster to the Canvas, you can use C
 [.lead]
 After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to manage storage classes.
 
-NOTE: If no storage classes are defined, the cluster will show there is an action required.
+NOTE: If no storage class is defined, the cluster will show there is an action required.
 
-== Add storage classes
+== Add initial storage class
 
 .Steps
 
-. From the Canvas, drag and drop the Kubernetes working environment on the Cloud Volumes ONTAP working environment to open the storage class wizard. 
-
-. Confirm one of the four most recent versions of Astra Trident is installed.
+. From the Canvas, drag and drop the Kubernetes working environment on the Cloud Volumes ONTAP working environment to open the storage class wizard.
++
+NOTE: To add additional storage classes, double-click the Kubernetes working environment on the Canvas or click *Enter Working Environment*.
 
 . Click *Add Storage Class* to define the storage class for the Kubernetes cluster.
 +
