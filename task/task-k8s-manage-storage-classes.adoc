@@ -15,19 +15,13 @@ summary: After you add a managed-Kubernetes cluster to the Canvas, you can use C
 [.lead]
 After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to manage storage classes.
 
-NOTE: If no storage class is defined, the cluster will show there is an action required.
+NOTE: If no storage class is defined, the cluster will show there is an action required. Double-clicking the cluster on the Canvas will open the action page to add a storage class.
 
-== Add initial storage class
+== Add storage class
 
 .Steps
 
 . From the Canvas, drag and drop the Kubernetes working environment on the Cloud Volumes ONTAP working environment to open the storage class wizard.
-+
-NOTE: To add additional storage classes, double-click the Kubernetes working environment on the Canvas or click *Enter Working Environment*.
-
-. Click *Add Storage Class* to define the storage class for the Kubernetes cluster.
-+
-image:screenshot-k8s-add-storage-class.png[A screenshot of the K8s resource page showing the add storage class button.]
 
 . Provide a name for the storage class, select definition options, and click *Next*.
 +
