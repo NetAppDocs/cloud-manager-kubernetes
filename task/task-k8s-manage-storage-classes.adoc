@@ -21,7 +21,7 @@ NOTE: If no storage classes are defined, the cluster will show there is an actio
 
 .Steps
 
-. Double-click the Kubernetes working environment on the Canvas or click *Enter Working Environment*.
+. Drag and drop the Kubernetes working environment on the Cloud Volumes ONTAP working environment to open the storage class wizard. 
 
 . Confirm one of the four most recent versions of Astra Trident is installed.
 
