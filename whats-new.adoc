@@ -16,6 +16,13 @@ summary: Learn what's new in Kubernetes in Cloud Manager.
 Learn what's new in Kubernetes in Cloud Manager.
 
 //tag::whats-new[]
+== 8 May 2022
+
+=== Drag and drop to add storage class
+You can now drag your Kubernetes cluster and drop it onto the Cloud Volumes ONTAP working environment to add a storage class directly from the Canvas.
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes[Add storage class]
+
 == 4 April 2022
 
 === Manage Kubernetes clusters using the Cloud Manager resource page
@@ -38,6 +45,8 @@ You can now add and manage managed Google Kubernetes Engine (GKE) clusters and s
 
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html[Learn how to get started with Kubernetes clusters in Google Cloud].
 
+
+//end::whats-new[]
 == 11 January 2022
 
 === Support for Kubernetes clusters in Azure
@@ -45,8 +54,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 You can now add and manage managed Azure Kubernetes clusters (AKS) and self-managed Kubernetes clusters in Azure using Cloud Manager.
 
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html[Getting started with Kubernetes clusters in Azure]
-
-//end::whats-new[]
 
 == 28 November 2021
 
