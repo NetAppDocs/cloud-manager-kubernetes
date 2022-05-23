@@ -16,6 +16,7 @@ summary: Learn what's new in Kubernetes in Cloud Manager.
 Learn what's new in Kubernetes in Cloud Manager.
 
 //tag::whats-new[]
+
 == 4 May 2022
 
 === Drag and drop to add storage class
