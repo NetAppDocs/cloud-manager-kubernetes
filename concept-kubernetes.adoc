@@ -27,9 +27,9 @@ You can directly manage your Kubernetes clusters using Cloud Manager.
 
 Cloud Manager supports managed-Kubernetes clusters running in:
 
-* link:../requirements/kubernetes-reqs-aws.html[Amazon Elastic Kubernetes Service (Amazon EKS)]
-* link:../requirements/kubernetes-reqs-aks.html[Microsoft Azure Kubernetes Service (AKS)]
-* link:../requirements/kubernetes-reqs-gke.html[Google Kubernetes Engine (GKE)]
+* link:./requirements/kubernetes-reqs-aws.html[Amazon Elastic Kubernetes Service (Amazon EKS)]
+* link:./requirements/kubernetes-reqs-aks.html[Microsoft Azure Kubernetes Service (AKS)]
+* link:./requirements/kubernetes-reqs-gke.html[Google Kubernetes Engine (GKE)]
 
 == Supported Astra Trident deployments
 
