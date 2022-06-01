@@ -677,7 +677,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-05 18:51:05 +0000">04/05/2022</time>
+    <time datetime="2022-06-01 18:35:20 +0000">06/01/2022</time>
     
   
 
@@ -1076,14 +1076,62 @@ roleRef:
 </div>
 </li>
 <li>
-<p>Create an identity mapping to the permissions group using <code>eksctl</code>. An example is provided below.</p>
+<p>Create an identity mapping to the permissions group.</p>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">Use eksctl</div>
+<div class="content">
+<div class="paragraph">
+<p>Use eksctl to create an IAM identity mapping between a cluster and the IAM role for the Cloud Manager Connector.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://eksctl.io/usage/iam-identity-mappings/" target="_blank" rel="noopener">Go to the eksctl documentation for full instructions</a>.</p>
+</div>
+<div class="paragraph">
+<p>An example is provided below.</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-eksctl" data-lang="eksctl">eksctl create iamidentitymapping --cluster &lt;eksCluster&gt; --region &lt;us-east-2&gt; --arn &lt;ARN of the Connector IAM role&gt; --group cloudmanager-access-group --username system:node:{{EC2PrivateDNSName}}</code></pre>
 </div>
 </div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Edit aws-auth</div>
+<div class="content">
 <div class="paragraph">
-<p><a href="https://eksctl.io/usage/iam-identity-mappings/" target="_blank" rel="noopener">Go to the eksctl documentation for full instructions</a>.</p>
+<p>Directly edit the aws-auth ConfigMap to add RBAC access to the IAM role for the Cloud Manager Connector.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html" target="_blank" rel="noopener">Go to the AWS EKS documentation for full instructions</a>.</p>
+</div>
+<div class="paragraph">
+<p>An example is provided below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - cloudmanager-access-group
+      rolearn: &lt;ARN of the Connector IAM role&gt;
+     username: system:node:{{EC2PrivateDNSName}}
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-09-30T21:09:18Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1021"
+  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
+  uid: dcc31de5-3838-11e8-af26-02e00430057c</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </li>
 </ol>
