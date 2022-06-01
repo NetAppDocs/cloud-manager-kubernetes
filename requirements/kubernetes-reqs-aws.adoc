@@ -269,9 +269,48 @@ eksctl create iamidentitymapping --cluster < > --region < > --arn < > --group "s
 [source,kubectl]
 kubectl apply -f <file-name>
 
-. Create an identity mapping to the permissions group using `eksctl`. An example is provided below.
+. Create an identity mapping to the permissions group.
 +
+[role="tabbed-block"]
+====
+
+.Use eksctl
+--
+
+Use eksctl to create an IAM identity mapping between a cluster and the IAM role for the Cloud Manager Connector.
+
+https://eksctl.io/usage/iam-identity-mappings/[Go to the eksctl documentation for full instructions^].
+
+An example is provided below.
+
 [source,eksctl]
 eksctl create iamidentitymapping --cluster <eksCluster> --region <us-east-2> --arn <ARN of the Connector IAM role> --group cloudmanager-access-group --username system:node:{{EC2PrivateDNSName}}
-+
-https://eksctl.io/usage/iam-identity-mappings/[Go to the eksctl documentation for full instructions^].
+--
+
+.Edit aws-auth
+--
+Directly edit the aws-auth ConfigMap to add RBAC access to the IAM role for the Cloud Manager Connector.
+
+https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html[Go to the AWS EKS documentation for full instructions^].
+
+An example is provided below.
+
+[source,yaml]
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - cloudmanager-access-group
+      rolearn: <ARN of the Connector IAM role>
+     username: system:node:{{EC2PrivateDNSName}}
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-09-30T21:09:18Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1021"
+  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
+  uid: dcc31de5-3838-11e8-af26-02e00430057c
+--
+
+====
