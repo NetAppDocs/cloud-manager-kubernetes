@@ -29,7 +29,7 @@ image:screenshot-k8s-define-storage-class.png[A screenshot showing definition op
 
 . Select a working environment to connect to the cluster. Click *Add*.
 +
-image:screenshot-k8s-we-storage-class.png[A screenshot showing working environment selection for the Kubernetes cluster.]
+image:screenshot-k8s-select-storage-class.png[A screenshot showing working environment selection for the Kubernetes cluster.]
 
 .Results
 You can click to view the storage class from the resource page for the Kubernetes cluster.

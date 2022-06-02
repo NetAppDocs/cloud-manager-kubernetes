@@ -19,4 +19,4 @@ At this time, Cloud Backup is supported with Kubernetes clusters. You can use Cl
 
 link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html[Learn how to protect your Kubernetes cluster data using Cloud Backup^].
 
-image:screenshot-kubernetes-backup.png[A screenshot of the Kubernetes page in the Cloud Backup Service which shows five backup jobs for a Kubernetes cluster.]
+image:screenshot-k8s-backup.png[A screenshot of the Kubernetes page in the Cloud Backup Service which shows five backup jobs for a Kubernetes cluster.]
