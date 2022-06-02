@@ -29,7 +29,7 @@ ifdef::aws[]
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html[Requirements for Kubernetes clusters in AWS^]
 endif::aws[]
 
-idef::azure[]
+ifdef::azure[]
 [role="quick-margin-para"]
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html[Requirements for Kubernetes clusters in Azure^]
 endif::azure[]
