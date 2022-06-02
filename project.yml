@@ -92,18 +92,24 @@ homepage:
     - title: Requirements
       links:
         - title: Kubernetes clusters on AWS
+          flavor: aws
           url: /requirements/kubernetes-reqs-aws.html
         - title: Kubernetes clusters on Azure
+          flavor: azure
           url: /requirements/kubernetes-reqs-aks.html
         - title: Kubernetes clusters on Google Cloud
+          flavor: gcp
           url: /requirements/kubernetes-reqs-gke.html
     - title: Add Kubernetes clusters
       links:
         - title: Add clusters on AWS
+          flavor: aws
           url: /task/task-kubernetes-discover-aws.html
         - title: Add clusters on Azure
+          flavor: azure
           url: /task/task-kubernetes-discover-azure.html
         - title: Add clusters on Google Cloud
+          flavor: gcp
           url: /task/task-kubernetes-discover-gke.html
     - title: Manage Kubernetes clusters
       links:
