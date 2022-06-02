@@ -6,6 +6,19 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: true
+  filter:
+    label: Cloud provider
+    default: All cloud providers
+    options:
+      - name: Amazon Web Services
+        alias: AWS
+        id: aws
+      - name: Google Cloud
+        alias: Google Cloud
+        id: gcp
+      - name: Microsoft Azure
+        alias: Azure
+        id: azure
 sidebar:
   entries:
     - title: All Cloud Manager documentation
@@ -23,18 +36,24 @@ sidebar:
     - title: Requirements
       entries:
         - title: Kubernetes clusters on AWS
+          flavor: aws
           url: /requirements/kubernetes-reqs-aws.html
         - title: Kubernetes clusters on Azure
+          flavor: azure
           url: /requirements/kubernetes-reqs-aks.html
         - title: Kubernetes clusters on Google Cloud
+          flavor: gcp
           url: /requirements/kubernetes-reqs-gke.html
     - title: Add Kubernetes clusters
       entries:
         - title: Add clusters on AWS
+          flavor: aws
           url: /task/task-kubernetes-discover-aws.html
         - title: Add clusters on Azure
+          flavor: azure
           url: /task/task-kubernetes-discover-azure.html
         - title: Add clusters on Google Cloud
+          flavor: gcp
           url: /task/task-kubernetes-discover-gke.html
     - title: Manage Kubernetes clusters
       url: /concept-manage-k8s.html
