@@ -15,7 +15,7 @@ summary: After you add a managed-Kubernetes cluster to the Canvas, you can use C
 [.lead]
 After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to manage storage classes.
 
-NOTE: If no storage class is defined, the cluster will show there is an action required. Double-clicking the cluster on the Canvas will open the action page to add a storage class.
+NOTE: If no storage class is defined, the cluster will show there is an action required. Double-clicking the cluster on the Canvas opens the action page to add a storage class.
 
 == Add storage class
 
