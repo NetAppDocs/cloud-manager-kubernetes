@@ -39,7 +39,7 @@ To upgrade Astra Trident, link:https://docs.netapp.com/us-en/trident/trident-man
 
 == Supported backend storage
 
-NetApp's Astra Trident must be installed on each Kubernetes cluster and Cloud Volumes ONTAP must be configured as backend storage for the clusters.
+NetApp's Astra Trident must be installed on each Kubernetes cluster and Cloud Volumes ONTAP or Amazon FSx for ONTAP must be configured as backend storage for the clusters.
 
 == Cost
 
