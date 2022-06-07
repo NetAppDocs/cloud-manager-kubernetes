@@ -18,7 +18,7 @@ Learn what's new in Kubernetes in Cloud Manager.
 //tag::whats-new[]
 == 6 June 2022
 
-Cloud Manager now suports Amazon FSx for ONTAP backend storage.  
+Cloud Manager now suports Amazon FSx for ONTAP as backend storage.  
 
 == 4 May 2022
 
