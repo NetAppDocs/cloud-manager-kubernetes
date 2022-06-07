@@ -17,6 +17,10 @@ Learn what's new in Kubernetes in Cloud Manager.
 
 //tag::whats-new[]
 
+== 6 June 2022
+
+Cloud Manager now suports Amazon FSx for ONTAP as backend storage.  
+
 == 4 May 2022
 
 === Drag and drop to add storage class
@@ -38,6 +42,7 @@ You can now take the following actions from the cluster resource page.
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html[Remove clusters]
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html[Enable data services]
 
+//end::whats-new[]
 == 27 February 2022
 
 === Support for Kubernetes clusters in Google Cloud
