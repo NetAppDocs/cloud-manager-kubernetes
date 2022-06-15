@@ -21,7 +21,7 @@ NOTE: If no storage class is defined, the cluster will show there is an action r
 
 .Steps
 
-. From the Canvas, drag and drop the Kubernetes working environment on the Cloud Volumes ONTAP working environment to open the storage class wizard.
+. From the Canvas, drag and drop the Kubernetes working environment on to the Cloud Volumes ONTAP or Amazon FSx for ONTAP working environment to open the storage class wizard.
 
 . Provide a name for the storage class, select definition options, and click *Next*.
 +
