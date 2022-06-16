@@ -5,7 +5,7 @@ keywords: kubernetes, k8s, install astra trident, kubernetes support
 summary: After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to confirm a compatible Astra Trident installation or install Astra Trident.  One of the four most recent versions of Astra Trident is required.
 ---
 
-= Install Astra Trident
+= Install or upgrade Astra Trident
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -27,7 +27,7 @@ NOTE: If Astra Trident is not installed, or an incompatible version of Astra Tri
 +
 image:screenshot-k8s-install-trident.png[A screenshot of the K8s resource page showing no Astra Trident installation and button to install Astra Trident.]
 
-.. If a back level version of Astra Trident is installed, https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-trident.html[go to the Astra Trident docs for upgrade steps^].
+.. If a back level version of Astra Trident is installed, click *Upgrade Trident*. 
 +
 image:screenshot-k8s-upgrade-trident.png[A screenshot of the process to upgrade Astra Trident.]
 
