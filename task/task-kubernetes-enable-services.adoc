@@ -15,7 +15,7 @@ summary: After you add a managed-Kubernetes cluster to the Canvas, you can use N
 [.lead]
 After you add a managed-Kubernetes cluster to the Canvas, you can use NetApp cloud data services for advanced data management.
 
-At this time, Cloud Backup is supported with Kubernetes clusters. You can use Cloud Backup to back up persistent volumes to object storage.
+You can use Cloud Backup to back up persistent volumes to object storage.
 
 link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html[Learn how to protect your Kubernetes cluster data using Cloud Backup^].
 

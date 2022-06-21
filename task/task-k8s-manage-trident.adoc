@@ -13,11 +13,15 @@ summary: After you add a managed-Kubernetes cluster to the Canvas, you can use C
 :imagesdir: ../media/
 
 [.lead]
-After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to confirm a compatible Astra Trident installation or install Astra Trident.  One of the four most recent versions of Astra Trident is required.
+After you add a managed Kubernetes cluster to the Canvas, you can use Cloud Manager to confirm a compatible Astra Trident installation or install or upgrade Astra Trident to the latest version. 
+
+[NOTE]
+===============================
+* If Astra Trident is not installed, or an incompatible version of Astra Trident is installed, the cluster will show there is an action required.
+* One of the four most recent versions of Astra Trident, deployed using the Trident operator, is required. Astra Trident deployed using `tridentctl` is not supported. 
+===============================
 
 To learn more about Astra Trident, see link:https://docs.netapp.com/us-en/trident/index.html[Astra Trident documentation^].
-
-NOTE: If Astra Trident is not installed, or an incompatible version of Astra Trident is installed, the cluster will show there is an action required.
 
 .Steps
 
