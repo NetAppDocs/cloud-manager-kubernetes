@@ -31,7 +31,7 @@ To learn more about Astra Trident, see link:https://docs.netapp.com/us-en/triden
 +
 image:screenshot-k8s-install-trident.png[A screenshot of the K8s resource page showing no Astra Trident installation and button to install Astra Trident.]
 
-.. If a back level version of Astra Trident is installed, click *Upgrade Trident*. 
+.. If an unsupported version of Astra Trident is installed, click *Upgrade Trident*. 
 +
 image:screenshot-k8s-upgrade-trident.png[A screenshot of the process to upgrade Astra Trident.]
 
