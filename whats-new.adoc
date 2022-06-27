@@ -16,6 +16,15 @@ summary: Learn what's new in Kubernetes in Cloud Manager.
 Learn what's new in Kubernetes in Cloud Manager.
 
 //tag::whats-new[]
+== 3 July 2022
+* If Astra Trident was deployed using the Trident operator, you can now upgrade to the latest version of Astra Trident using Cloud Manager. 
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html[Install and manage Astra Trident] 
+
+* You can now drag your Kubernetes cluster and drop it onto the AWS FSx for ONTAP working environment to add a storage class directly from the Canvas.
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes[Add storage class]
+
 == 6 June 2022
 
 Cloud Manager now suports Amazon FSx for ONTAP as backend storage.  
@@ -27,6 +36,7 @@ You can now drag your Kubernetes cluster and drop it onto the Cloud Volumes ONTA
 
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes[Add storage class]
 
+//end::whats-new[]
 == 4 April 2022
 
 === Manage Kubernetes clusters using the Cloud Manager resource page
@@ -41,7 +51,6 @@ You can now take the following actions from the cluster resource page.
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html[Remove clusters]
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html[Enable data services]
 
-//end::whats-new[]
 == 27 February 2022
 
 === Support for Kubernetes clusters in Google Cloud
