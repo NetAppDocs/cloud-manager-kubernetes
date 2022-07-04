@@ -13,7 +13,7 @@ summary: After you add a managed-Kubernetes cluster to the Canvas, you can use C
 :imagesdir: ../media/
 
 [.lead]
-After you add a managed-Kubernetes cluster to the Canvas, you can use Cloud Manager to remove clusters from the workspace.
+After you add a managed Kubernetes cluster to the Canvas, you can use Cloud Manager to remove clusters from the workspace.
 
 .Steps
 
