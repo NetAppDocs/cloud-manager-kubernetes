@@ -12,7 +12,9 @@ summary: You can use Cloud Manager to install Astra Trident, configure storage c
 :linkattrs:
 :imagesdir: ./media/
 
-You can use Cloud Manager to install Astra Trident, configure storage classes, remove clusters, and enable data services.
+You can use Cloud Manager to install or upgrade Astra Trident, configure storage classes, remove clusters, and enable data services.
+
+NOTE: Astra Trident deployed using `tridentctl` is not supported. If you deployed Astra Trident using `tridentctl`, you cannot use Cloud Manager to manage your Kubernetes clusters. You must link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl[uninstall using `tridentctl`^] and reinstall link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html[using the Trident operator^] or link:./tasks/task-k8s-manage-trident.html[using Cloud Manager]. 
 
 == Features
 
@@ -23,7 +25,7 @@ image:screenshot-k8s-resource-page.png[A screenshot of the Kubernetes resource p
 From the resource page you can:
 
 * View the Kubernetes cluster status.
-* Confirm Astra Trident is installed. See link:./task/task-k8s-manage-trident.html[Install Astra Trident].
+* Confirm a compatible version of Astra Trident is installed, or upgrade to the latest version of Astra Trident. See link:./task/task-k8s-manage-trident.html[Install Astra Trident].
 * Add and remove storage classes. See link:./task/task-k8s-manage-storage-classes.html[Manage storage classes].
 * View persistent volumes. See link:./task/task-k8s-manage-persistent-volumes.html[View persistent volumes].
 * Remove Kubernetes clusters from the workspace. See link:./task/task-k8s-manage-remove-cluster.html[Remove clusters].
