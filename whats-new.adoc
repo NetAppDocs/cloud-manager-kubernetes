@@ -37,6 +37,7 @@ You can now drag your Kubernetes cluster and drop it onto the Cloud Volumes ONTA
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes[Add storage class]
 
 //end::whats-new[]
+
 == 4 April 2022
 
 === Manage Kubernetes clusters using the Cloud Manager resource page
@@ -51,6 +52,7 @@ You can now take the following actions from the cluster resource page.
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html[Remove clusters]
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html[Enable data services]
 
+//end::whats-new[]
 == 27 February 2022
 
 === Support for Kubernetes clusters in Google Cloud
@@ -59,6 +61,8 @@ You can now add and manage managed Google Kubernetes Engine (GKE) clusters and s
 
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html[Learn how to get started with Kubernetes clusters in Google Cloud].
 
+
+//end::whats-new[]
 == 11 January 2022
 
 === Support for Kubernetes clusters in Azure
